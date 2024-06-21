@@ -2,6 +2,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { IdentifyComponent } from './identify.component';
 
+import { RiddleComponent } from '../riddle/riddle.component';
+
 describe('IdentifyComponent', () => {
   let component: IdentifyComponent;
   let fixture: ComponentFixture<IdentifyComponent>;

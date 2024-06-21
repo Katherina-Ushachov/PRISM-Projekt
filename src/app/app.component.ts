@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MyButtonComponentComponent } from './my-button-component/my-button-component.component';
 import {IdentifyComponent} from './identify/identify.component';
+import { RiddleComponent } from './riddle/riddle.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MyButtonComponentComponent, IdentifyComponent],
+  imports: [RouterOutlet, MyButtonComponentComponent, IdentifyComponent, RiddleComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
