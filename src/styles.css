@@ -8,6 +8,9 @@
       p {
         color:antiquewhite;
       }
+      label{
+        color:antiquewhite;
+      }
 }
 
 @media (prefers-color-scheme: light) {
@@ -17,6 +20,9 @@
       p {
         color: rgb(255, 192, 192);
       }
+      label{
+        color:rgb(255, 192, 192);
+      }
 }
 
 @media (prefers-color-scheme: no-preference) {
@@ -25,5 +31,8 @@
       }
       p {
         color: rgb(255, 127, 127);
+      }
+      label{
+        color:rgb(255, 127, 127);
       }
 }
