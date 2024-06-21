@@ -4,8 +4,8 @@
     <input type="text" formControlName="username" />
     <br>
     <button type="submit" [disabled]="!profileForm.valid">Absenden</button>
-
-    @defer (on viewport){
+<br>
+    @defer (on interaction; on timer(5s)){
 
 
 <label for="name">Guten Tag, {{ profileForm.value.username }}. Nun, da wir einander vorgestellt wurden, ist es Zeit für den nächsten Schritt.
