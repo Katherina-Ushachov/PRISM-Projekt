@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import { ReactiveFormsModule, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-identify',
   standalone: true,
-  imports: [FormsModule],
+  imports: [ReactiveFormsModule],
   templateUrl: './identify.component.html',
   styleUrl: './identify.component.css'
 })
 export class IdentifyComponent {
-    username = '';
+  profileForm = new FormGroup({
+    username: new FormControl('')
+  });
 
 }
