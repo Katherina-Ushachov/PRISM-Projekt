@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ReactiveFormsModule, FormControl, FormGroup } from '@angular/forms';
+import { ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-identify',
@@ -10,7 +10,7 @@ import { ReactiveFormsModule, FormControl, FormGroup } from '@angular/forms';
 })
 export class IdentifyComponent {
   profileForm = new FormGroup({
-    username: new FormControl('')
+    username: new FormControl('', Validators.required)
   });
 
 }
