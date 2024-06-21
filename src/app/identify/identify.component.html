@@ -4,7 +4,19 @@
     <input type="text" formControlName="username" />
     <br>
     <button type="submit" [disabled]="!profileForm.valid">Absenden</button>
+
+    @defer (on viewport){
+
+
 <label for="name">Guten Tag, {{ profileForm.value.username }}. Nun, da wir einander vorgestellt wurden, ist es Zeit für den nächsten Schritt.
 </label>
+} @placeholder {
+    <p>Verarbeitung läuft ... Bitte warten ...</p>
+  }@loading (minimum 4s) {
+    <p>Bitte warten ...</p>
+  
+
+}
+
 
 </form>
