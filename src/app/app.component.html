@@ -61,7 +61,9 @@
       <h1>Herzlich Willkommen bei {{ title }}.</h1>
       <p>Diese Webseite widmet sich der Entschlüsselung eines der größten Geheimnisse der Menschheit.</p>
       <p>Um Zugriff zu erhalten, müssen Sie sich zunächst identifizieren.</p>
+      <app-identify></app-identify>
       <app-my-button-component></app-my-button-component>
+      
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
@@ -69,11 +71,11 @@
         @for (item of [
           { title: 'Die Hüterin aller Geheimnisse', link: 'https://feuerblut.com' },
           { title: 'Hier kommt ein Link hin', link: '#' },
-          { title: 'Hier kommt ein Link hin', link: '#' },
-          { title: 'Hier kommt ein Link hin', link: '#' },
-          { title: 'Hier kommt ein Link hin', link: '#' },
-          { title: 'Hier kommt ein Link hin', link: '#' },
-          { title: 'Hier kommt ein Link hin', link: '#' },
+          { title: 'Hier kommt ein Link hin2', link: '#' },
+          { title: 'Hier kommt ein Link hin3', link: '#' },
+          { title: 'Hier kommt ein Link hin4', link: '#' },
+          { title: 'Hier kommt ein Link hin5', link: '#' },
+          { title: 'Hier kommt ein Link hin6', link: '#' },
         ]; track item.title) {
           <a
             class="pill"
