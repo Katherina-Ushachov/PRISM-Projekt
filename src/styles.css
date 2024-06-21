@@ -2,16 +2,28 @@
     body {
         background-color: black;
       }
+      h1{
+        color: antiquewhite;
+      }
+      p {
+        color:antiquewhite;
+      }
 }
 
 @media (prefers-color-scheme: light) {
     body {
         background-color: rgb(255, 192, 192);
       }
+      p {
+        color: rgb(255, 192, 192);
+      }
 }
 
 @media (prefers-color-scheme: no-preference) {
     body {
         background-color: rgb(255, 127, 127);
+      }
+      p {
+        color: rgb(255, 127, 127);
       }
 }
