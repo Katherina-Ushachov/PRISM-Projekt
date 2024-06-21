@@ -12,18 +12,26 @@
     --gray-700: oklch(36.98% 0.014 302.71);
     --gray-400: oklch(70.9% 0.015 304.04);
 
-    --red-to-pink-to-purple-vertical-gradient: linear-gradient(
+    --rainbow-gradient: linear-gradient(
       180deg,
-      var(--orange-red) 0%,
-      var(--green) 50%,
-      var(--darkblue) 100%
+      var(--purple) 0%,
+      var(--darkblue) 15%,
+      var(--lightblue) 30%
+      var(--green) 45%,
+      var(--yellow) 60%,
+      var(--orange-red) 75%,
+      var(--red) 100%,
     );
 
-    --red-to-pink-to-purple-horizontal-gradient: linear-gradient(
+    --rainbow-horizontal-gradient: linear-gradient(
       90deg,
-      var(--orange-red) 0%,
-      var(--green) 50%,
-      var(--darkblue) 100%
+      var(--purple) 0%,
+      var(--darkblue) 15%,
+      var(--lightblue) 30%
+      var(--green) 45%,
+      var(--yellow) 60%,
+      var(--orange-red) 75%,
+      var(--red) 100%,
     );
 
     --pill-accent: var(--purple);
@@ -84,7 +92,7 @@
 
   .divider {
     width: 1px;
-    background: var(--red-to-pink-to-purple-vertical-gradient);
+    background: var(--rainbow-gradient);
     margin-inline: 0.5rem;
   }
 
@@ -161,7 +169,7 @@
     .divider {
       height: 1px;
       width: 100%;
-      background: var(--red-to-pink-to-purple-horizontal-gradient);
+      background: var(--rainbow-horizontal-gradient);
       margin-block: 1.5rem;
     }
   }
