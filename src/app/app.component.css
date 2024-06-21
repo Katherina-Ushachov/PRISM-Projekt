@@ -15,22 +15,14 @@
     --rainbow-gradient: linear-gradient(
       180deg,
       var(--purple) 0%,
-      var(--darkblue) 15%,
-      var(--lightblue) 30%
-      var(--green) 45%,
-      var(--yellow) 60%,
-      var(--orange-red) 75%,
+      var(--green) 50%,
       var(--red) 100%,
     );
 
     --rainbow-horizontal-gradient: linear-gradient(
       90deg,
       var(--purple) 0%,
-      var(--darkblue) 15%,
-      var(--lightblue) 30%
-      var(--green) 45%,
-      var(--yellow) 60%,
-      var(--orange-red) 75%,
+      var(--green) 50%,
       var(--red) 100%,
     );
 
