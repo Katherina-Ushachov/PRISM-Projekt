@@ -124,13 +124,24 @@
     --pill-accent: var(--purple);
   }
   .pill-group .pill:nth-child(6n + 2) {
+    --pill-accent: var(--darkblue);
+  }
+  .pill-group .pill:nth-child(6n + 3){
     --pill-accent: var(--lightblue);
   }
-  .pill-group .pill:nth-child(6n + 3),
-  .pill-group .pill:nth-child(6n + 4),
+  .pill-group .pill:nth-child(6n + 4){
+    --pill-accent: var(--green);
+  }
   .pill-group .pill:nth-child(6n + 5) {
     --pill-accent: var(--yellow);
   }
+  .pill-group .pill:nth-child(6n + 6) {
+    --pill-accent: var(--orange-red);
+  }
+  .pill-group .pill:nth-child(6n + 7) {
+    --pill-accent: var(--red);
+  }
+
 
   .pill-group svg {
     margin-inline-start: 0.25rem;
