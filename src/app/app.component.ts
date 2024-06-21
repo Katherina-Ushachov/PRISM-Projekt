@@ -10,5 +10,5 @@ import { MyButtonComponentComponent } from './my-button-component/my-button-comp
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'my-first-app';
+  title = 'P.R.I.S.M';
 }
