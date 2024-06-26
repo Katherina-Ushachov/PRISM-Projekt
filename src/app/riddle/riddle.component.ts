@@ -10,7 +10,7 @@ import { ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angula
   styleUrl: './riddle.component.css'
 })
 export class RiddleComponent {
-  profileForm: any;
+  profileForm:any;
   value: boolean = false;
 }
 

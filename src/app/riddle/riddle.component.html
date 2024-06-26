@@ -5,10 +5,10 @@
    
     @if(value){
       <form [formGroup]="profileForm">
-        <input type="text" formControlName="solution" required minlength="3"/>
+        <input type="text" formControlName="solution" />
         <br>
         <button type="submit" [disabled]="!profileForm.valid">Absenden</button>
-        </form>
+      </form>
     }
 
 
