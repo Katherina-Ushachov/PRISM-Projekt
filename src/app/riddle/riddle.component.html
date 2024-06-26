@@ -2,6 +2,15 @@
 
 @defer (on interaction; on timer(5s)){
     <button class="btn" (click)="value = !value">Start</button>
+   
+    @if(value){
+      <form [formGroup]="profileForm">
+        <input type="text" formControlName="solution" required minlength="3"/>
+        <br>
+        <button type="submit" [disabled]="!profileForm.valid">Absenden</button>
+        </form>
+    }
+
 
     } @placeholder {
         <p>Verarbeitung läuft ... Bitte warten ... Bitte warten ...</p>
@@ -9,12 +18,6 @@
         <p>Fast geschafft ...</p>
       }
 
-@if(value){
-  <form [formGroup]="profileForm">
-    <input type="text" formControlName="solution" />
-    <br>
-    <button type="submit" [disabled]="!profileForm.valid">Absenden</button>
-<br>
-}
+
 
 
