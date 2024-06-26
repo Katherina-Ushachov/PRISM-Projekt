@@ -7,14 +7,14 @@
 <br>
     @defer (on interaction; on timer(5s)){
 
-
+        @if (profileForm.valid){
 <label for="name">Guten Tag, {{ profileForm.value.username }}. Nun, da wir einander vorgestellt wurden, ist es Zeit für den nächsten Schritt.
-</label>
+</label>}
 } @placeholder {
     <p>Verarbeitung läuft ... Bitte warten ...</p>
   }@loading (minimum 4s) {
     <p>Bitte warten ...</p>
-  
+
 
 }
 

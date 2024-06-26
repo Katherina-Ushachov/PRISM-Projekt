@@ -11,6 +11,7 @@ import { ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angula
 export class IdentifyComponent {
   profileForm = new FormGroup({
     username: new FormControl('', Validators.required)
+    
   });
 
 }
