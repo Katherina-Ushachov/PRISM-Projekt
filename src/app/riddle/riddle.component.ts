@@ -11,6 +11,6 @@ import { Component } from '@angular/core';
 export class RiddleComponent {
 profileForm: any;
 start(){
-
+  'Sie können nun fortfahren';
 }
 }
