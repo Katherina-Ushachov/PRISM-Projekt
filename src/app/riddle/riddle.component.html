@@ -1,7 +1,7 @@
 <p>Sie müssen sich als würdig erweisen, um Zugriff auf weitere Inhalte von P.R.I.S.M. zu erhalten.</p>
 
 @defer (on interaction; on timer(5s)){
-    <button class="btn" (click)="start()">Start</button>
+    <button class="btn" (click)="value = !value">Start</button>
 
     } @placeholder {
         <p>Verarbeitung läuft ... Bitte warten ... Bitte warten ...</p>
@@ -9,7 +9,7 @@
         <p>Fast geschafft ...</p>
       }
 
-@if(click){
+@if(value){
   <form [formGroup]="profileForm">
     <input type="text" formControlName="solution" />
     <br>
