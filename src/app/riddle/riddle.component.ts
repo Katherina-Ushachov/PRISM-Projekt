@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './riddle.component.css'
 })
 export class RiddleComponent {
-
+start(){
+  
+}
 }
