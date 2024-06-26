@@ -9,6 +9,12 @@
         <p>Fast geschafft ...</p>
       }
 
-
+@if(click){
+  <form [formGroup]="profileForm">
+    <input type="text" formControlName="solution" />
+    <br>
+    <button type="submit" [disabled]="!profileForm.valid">Absenden</button>
+<br>
+}
 
 
