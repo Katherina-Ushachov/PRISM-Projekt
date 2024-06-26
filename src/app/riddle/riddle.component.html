@@ -5,7 +5,7 @@
    
     @if(value){
       <form [formGroup]="profileForm">
-        <input type="text" formControlName="solution" />
+        <input type="text" formControlName="solution" required minlength="3" />
         <br>
         <button type="submit" [disabled]="!profileForm.valid">Absenden</button>
       </form>
