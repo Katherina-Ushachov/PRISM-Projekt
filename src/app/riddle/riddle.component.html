@@ -7,22 +7,7 @@
         <p>Verarbeitung läuft ... Bitte warten ...</p>
       }@loading (minimum 4s) {
         <p>Bitte warten ...</p>
-      
-    
-        @defer (on interaction){
-            <form [formGroup]="profileForm">
-                <input type="text" formControlName="solution" />
-                <br>
-                <button type="submit" [disabled]="!profileForm.valid">Absenden</button>
-            <br>        
-            } @placeholder {
-                <p>Verarbeitung läuft ... Bitte warten ...</p>
-              }@loading (minimum 4s) {
-                <p>Bitte warten ...</p>
-              
-            
-            }
-    }
+      }
 
 
 
