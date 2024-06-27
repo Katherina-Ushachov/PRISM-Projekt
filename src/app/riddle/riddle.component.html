@@ -5,7 +5,20 @@
    
     @if(value){
       <form [formGroup]="profileForm">
-        <input type="text" formControlName="solution" required minlength="3" />
+        <input type="text" formControlName="solution"/>
+
+        <div *ngIf="solution.invalid && (solution.dirty || solution.touched)"
+        class="alert alert-danger">
+      <div *ngIf="solution.hasError('required')">
+       Es ist nicht möglich, weiterzumachen, ohne eine Eingabe zu tätigen.
+      </div>
+      <div *ngIf="solution.hasError('minlength')">
+        Die Eingabe muss mindestens vier Zeichen lang sein.
+      </div>
+      <div *ngIf="solution.hasError('forbiddenName')">
+        Herzlichen Glückwunsch. Sie haben eine erlaubte Eingabe getätigt.
+      </div>
+    </div>
         <br>
         <button type="submit" [disabled]="!profileForm.valid">Absenden</button>
       </form>
