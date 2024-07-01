@@ -23,14 +23,15 @@ onSubmit() {
     solution: new FormControl('', [
       Validators.required,
       Validators.minLength(3),
-      forbiddenNameValidator(/rot|gruen|grün|blau|gelb|hellblau|türkis|tuerkis|lila|violett|orange|purpur|dunkelblau)
+      forbiddenNameValidator(/rot|gruen|grün|blau|gelb|hellblau|türkis|tuerkis|lila|violett|orange|purpur|dunkelblau/)
     ],)
   });
   value: boolean = false;
 }
 function forbiddenNameValidator(nameRe: RegExp): ValidatorFn {
-  return (control: AbstractControl): ValidationErrors | null => {
+  return (control: AbstractControl): ValidationErrors | null => {    
     const forbidden = !nameRe.test(control.value);
+    console.log('AAAAAAghh', control.value, forbidden)
     return forbidden ? { forbiddenName: { value: control.value } } : null;
   };
 

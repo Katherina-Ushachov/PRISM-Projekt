@@ -8,22 +8,22 @@
         <label for="solution">Ihre Lösung:</label>
         <input id="solution" type="text" formControlName="solution"/>
 
-        <div *ngIf="solution.invalid && (solution.dirty || solution.touched)"
+        <div *ngIf="profileForm.dirty"
         class="alert alert-danger">
-      <div *ngIf="solution.hasError('required')">
+      <div *ngIf="profileForm.hasError('required')">
        Es ist nicht möglich, weiterzumachen, ohne eine Eingabe zu tätigen.
       </div>
-      <div *ngIf="solution.hasError('minlength')">
+      <div *ngIf="profileForm.hasError('minlength')">
         Die Eingabe muss mindestens vier Zeichen lang sein.
       </div>
-      <div *ngIf="solution.hasError('forbiddenName')">
+      <div *ngIf="profileForm.hasError('forbiddenName')">
         Herzlichen Glückwunsch. Sie haben eine erlaubte Eingabe getätigt.
       </div>
     </div>
         <br>
         <button type="submit" [disabled]="!profileForm.valid">Absenden</button>
       
-        <p>Kontrolle: {{ solution.value }}</p>
+        <p>Kontrolle: {{ profileForm.value.solution }}</p>
       </form>
     }
 
