@@ -19,7 +19,7 @@ onSubmit() {
       Validators.required,
       Validators.minLength(3),
       forbiddenNameValidator(/rot|gruen|grün|blau|gelb|hellblau|türkis|tuerkis|lila|violett|orange|purpur|dunkelblau)
-    ])
+    ],)
   });
   value: boolean = false;
 }
