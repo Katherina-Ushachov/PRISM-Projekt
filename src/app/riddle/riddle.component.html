@@ -24,6 +24,18 @@
         <button type="submit" [disabled]="!profileForm.valid">Absenden</button>
       
         <p>Kontrolle: {{ profileForm.value.solution }}</p>
+
+@if(profileForm.valid){
+  @defer (on interaction; on timer(5s)){
+  <app-revelation></app-revelation>
+} @placeholder {
+  <p>Verarbeitung läuft ... Bitte warten ... Bitte warten ...</p>
+}@loading (minimum 4s) {
+  <p>Fast geschafft ...</p>
+}
+}
+
+
       </form>
     }
 
@@ -34,7 +46,7 @@
         <p>Fast geschafft ...</p>
       }
 
-      <app-revelation></app-revelation>
+    
 
 
 
