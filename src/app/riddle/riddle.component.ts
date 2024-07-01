@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ReactiveFormsModule, FormControl, FormGroup, Validators, ValidatorFn, AbstractControl, ValidationErrors } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule, FormControl, FormGroup, Validators, ValidatorFn, AbstractControl, ValidationErrors } from '@angular/forms';
 
 
 @Component({
@@ -11,7 +11,12 @@ import { ReactiveFormsModule, FormControl, FormGroup, Validators, ValidatorFn, A
   styleUrl: './riddle.component.css'
 })
 export class RiddleComponent {
+
+  submitted = false;
+solution: any;
+
 onSubmit() {
+  this.submitted = true;
   console.warn(this.profileForm.value);
 }
   profileForm = new FormGroup({
@@ -28,6 +33,8 @@ function forbiddenNameValidator(nameRe: RegExp): ValidatorFn {
     const forbidden = !nameRe.test(control.value);
     return forbidden ? { forbiddenName: { value: control.value } } : null;
   };
+
+  
 }
 
 
