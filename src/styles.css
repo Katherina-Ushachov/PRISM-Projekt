@@ -11,6 +11,9 @@
       label{
         color:antiquewhite;
       }
+      h2{
+        color: antiquewhite;
+      }
 }
 
 @media (prefers-color-scheme: light) {
