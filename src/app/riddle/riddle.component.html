@@ -4,8 +4,9 @@
     <button class="btn" (click)="value = !value">Start</button>
    
     @if(value){
-      <form [formGroup]="profileForm">
-        <input type="text" formControlName="solution"/>
+      <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+        <label for="solution">Ihre Lösung:</label>
+        <input id="solution" type="text" formControlName="solution"/>
 
         <div *ngIf="solution.invalid && (solution.dirty || solution.touched)"
         class="alert alert-danger">
@@ -21,6 +22,8 @@
     </div>
         <br>
         <button type="submit" [disabled]="!profileForm.valid">Absenden</button>
+      
+        <p>Kontrolle: {{ solution.value }}</p>
       </form>
     }
 

@@ -11,6 +11,9 @@ import { ReactiveFormsModule, FormControl, FormGroup, Validators, ValidatorFn, A
   styleUrl: './riddle.component.css'
 })
 export class RiddleComponent {
+onSubmit() {
+  console.warn(this.profileForm.value);
+}
   profileForm = new FormGroup({
     solution: new FormControl('', [
       Validators.required,
@@ -26,4 +29,6 @@ function forbiddenNameValidator(nameRe: RegExp): ValidatorFn {
     return forbidden ? { forbiddenName: { value: control.value } } : null;
   };
 }
+
+
 
