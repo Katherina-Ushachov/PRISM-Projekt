@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './revelation.component.css'
 })
 export class RevelationComponent {
+reloadPage() {
+  window.location.reload()
+}
 
 }

@@ -30,3 +30,7 @@
 .magicHeadWithHair>*:nth-child(7n){
     color:var(--red);
 }
+
+.mycontainer div {
+    width:50%;  
+    display: inline-block;}
