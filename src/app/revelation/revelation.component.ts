@@ -8,6 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './revelation.component.css'
 })
 export class RevelationComponent {
+  someContent: boolean = false;
+
+displayInfo() {
+  this.someContent = !this.someContent;
+}
 reloadPage() {
   window.location.reload()
 }

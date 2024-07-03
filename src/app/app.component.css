@@ -176,3 +176,8 @@
       margin-block: 1.5rem;
     }
   }
+
+  div.right-side{
+     position: sticky;
+     top: 0;
+   }

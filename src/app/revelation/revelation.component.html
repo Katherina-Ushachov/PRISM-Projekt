@@ -12,10 +12,15 @@
     Erinnerungen individuell generiert, um nach dem Tod ein möglichst angenehmes Erlebnis zu garantieren.</p>
 
 <div class="mycontainer">
-    <div><button class="btn">Mehr erfahren</button></div>
-    <div> 
-        @if(true){<button class="btn" (click)=reloadPage()>Abbruch</button>
+    <div>
+        <button class="btn" (click)="displayInfo()">Mehr erfahren</button>
 
-    }
+    </div>
+    <div>
+        <button class="btn" (click)=reloadPage()>Abbruch</button>
+    </div>
 </div>
-</div>
+
+@if(someContent){ 
+    <p>Platzhalter text ABCDEFGHIJKLMOPQ</p>
+}
