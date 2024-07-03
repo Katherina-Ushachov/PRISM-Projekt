@@ -120,25 +120,25 @@
     background: color-mix(in srgb, var(--pill-accent) 15%, transparent);
   }
 
-  .pill-group .pill:nth-child(6n + 1) {
+  .pill-group .pill:nth-child(7n + 1) {
     --pill-accent: var(--purple);
   }
-  .pill-group .pill:nth-child(6n + 2) {
+  .pill-group .pill:nth-child(7n + 2) {
     --pill-accent: var(--darkblue);
   }
-  .pill-group .pill:nth-child(6n + 3){
+  .pill-group .pill:nth-child(7n + 3){
     --pill-accent: var(--lightblue);
   }
-  .pill-group .pill:nth-child(6n + 4){
+  .pill-group .pill:nth-child(7n + 4){
     --pill-accent: var(--green);
   }
-  .pill-group .pill:nth-child(6n + 5) {
+  .pill-group .pill:nth-child(7n + 5) {
     --pill-accent: var(--yellow);
   }
-  .pill-group .pill:nth-child(6n + 6) {
+  .pill-group .pill:nth-child(7n + 6) {
     --pill-accent: var(--orange-red);
   }
-  .pill-group .pill:nth-child(6n + 7) {
+  .pill-group .pill:nth-child(7n + 7) {
     --pill-accent: var(--red);
   }
 

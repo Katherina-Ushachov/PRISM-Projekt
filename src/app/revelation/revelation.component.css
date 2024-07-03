@@ -1,0 +1,32 @@
+.magicHeadWithHair{
+    font-size: xx-large;
+}
+
+
+.magicHeadWithHair>*:nth-child(7n + 1){
+    color:var(--purple);
+}
+
+.magicHeadWithHair>*:nth-child(7n + 2){
+    color:var(--darkblue);
+}
+
+.magicHeadWithHair>*:nth-child(7n + 3){
+    color:var(--lightblue);
+}
+
+.magicHeadWithHair>*:nth-child(7n + 4){
+    color:var(--green);
+}
+
+.magicHeadWithHair>*:nth-child(7n + 6){
+    color:var(--yellow);
+}
+
+.magicHeadWithHair>*:nth-child(7n + 6){
+    color:var(--orange-red);
+}
+
+.magicHeadWithHair>*:nth-child(7n){
+    color:var(--red);
+}
