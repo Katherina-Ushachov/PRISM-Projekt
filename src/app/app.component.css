@@ -177,7 +177,9 @@
     }
   }
 
-  div.right-side{
-     position: sticky;
-     top: 0;
-   }
+  div.left-side{
+    overflow-y: scroll;
+  }
+
+  
+  
