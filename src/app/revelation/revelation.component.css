@@ -19,7 +19,7 @@
     color:var(--green);
 }
 
-.magicHeadWithHair>*:nth-child(7n + 6){
+.magicHeadWithHair>*:nth-child(7n + 5){
     color:var(--yellow) !important;
 }
 
