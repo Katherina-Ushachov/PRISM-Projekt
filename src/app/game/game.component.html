@@ -13,10 +13,10 @@
 <div class="rainbowdash">
 
     <div>Die erste Frage ist einfach: Wählen Sie eine Jahreszeit aus!<br>
-        <button class="btn1">Frühling</button>
-        <button class="btn1">Sommer</button>
-        <button class="btn1">Herbst</button>
-        <button class="btn1">Winter</button>
+        <button class="btn1" (click)="selectPurple()">Frühling</button>
+        <button class="btn1" (click)="selectPurple()">Sommer</button>
+        <button class="btn1" (click)="selectPurple()">Herbst</button>
+        <button class="btn1" (click)="selectPurple()">Winter</button>
     </div>
 
     <div>Die zweite Frage lautet: Wie fällen Sie meist wichtige Entscheidungen?
@@ -47,17 +47,36 @@
         <button class="btn5">Emotional, sensibel und/oder fröhlich.</button>
         <button class="btn5">Spontan, draufgängerisch, und/oder wild.</button>
         <button class="btn5">Sanftmütig, ausgeglichen und/oder flexibel.</button>
-        <button class="btn5">Besonnen, ruhig, und/oder schlau.</button></div>
+        <button class="btn5">Besonnen, ruhig, und/oder schlau.</button>
+    </div>
 
     <div>Die sechste Frage lautet: Wie beschreiben Sie sich selbst?<br>
         <button class="btn6">Optimistisch - das Glas ist halb voll.</button>
-        <button class="btn6">Je nachdem - habe ich es gefüllt, ist es halbvoll. Habe ich daraus getrunken, halbleer.</button>
+        <button class="btn6">Je nachdem - habe ich es gefüllt, ist es halbvoll. Habe ich daraus getrunken,
+            halbleer.</button>
         <button class="btn6">Mit dem Fluss gehend - das Glas ist genau so, wie es gerade gebraucht wird.</button>
-        <button class="btn6">Situationsbezogen - es IST Trinkwasser im Glas. Und das wird jetzt getrunken.</button></div>
+        <button class="btn6">Situationsbezogen - es IST Trinkwasser im Glas. Und das wird jetzt getrunken.</button>
+    </div>
 
     <div>Und zu guter Letzt, die siebte Frage: Welches Element spricht Sie am meisten an?<br>
         <button class="btn7">Luft</button>
         <button class="btn7">Feuer</button>
         <button class="btn7">Erde</button>
-        <button class="btn7">Wasser</button></div>
+        <button class="btn7">Wasser</button>
+    </div>
+</div>
+
+<div><style color="white">
+    @if(purple1){ 
+    Lila
+ }
+ @if(purple2){ 
+    Violet
+ }
+ @if(purple3){ 
+    Lavendar
+ }
+ @if(purple4) {     
+    Mauve
+ }</style>
 </div>
