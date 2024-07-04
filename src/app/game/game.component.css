@@ -1,28 +1,39 @@
-div.rainbowdash>*:nth-child(7n + 1){
+.rainbowdash{
+    font-size: large;
+
+}
+
+.rainbowdash>*:nth-child(7n + 1){
     background-color:var(--purple);
     color: var(--yellow);
 }
 
-div.rainbowdash>*:nth-child(7n + 2){
+.rainbowdash>*:nth-child(7n + 2){
     background-color:var(--darkblue);
+    color: var(--yellow);
 }
 
-div.rainbowdash>*:nth-child(7n + 3){
+.rainbowdash>*:nth-child(7n + 3){
     background-color:var(--lightblue);
+    color: var(--purple)
 }
 
-div.rainbowdash>*:nth-child(7n + 4){
+.rainbowdash>*:nth-child(7n + 4){
     background-color:var(--green);
+    color: var(--yellow);
 }
 
-div.rainbowdash>*:nth-child(7n + 6){
+.rainbowdash>*:nth-child(7n + 6){
     background-color:var(--yellow);
+    color: var(--purple)
 }
 
-div.rainbowdash>*:nth-child(7n + 6){
+.rainbowdash>*:nth-child(7n + 6){
     background-color:var(--orange-red);
+    color: var(--green);
 }
 
-div.rainbowdash>*:nth-child(7n){
+.rainbowdash>*:nth-child(7n){
     background-color:var(--red);
+    color: var(--yellow);
 }
