@@ -6,6 +6,9 @@
       h1{
         color: antiquewhite;
       }
+      p {
+        color:antiquewhite;
+      }
       label{
         color:antiquewhite;
       }
@@ -21,6 +24,9 @@
     body {
         background-color: rgb(255, 192, 192);
       }
+      p {
+        color: rgb(255, 192, 192);
+      }
       label{
         color:rgb(255, 192, 192);
       }
@@ -29,6 +35,9 @@
 @media (prefers-color-scheme: no-preference) {
     body {
         background-color: rgb(255, 127, 127);
+      }
+      p {
+        color: rgb(255, 127, 127);
       }
       label{
         color:rgb(255, 127, 127);

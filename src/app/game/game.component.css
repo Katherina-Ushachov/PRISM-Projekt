@@ -5,12 +5,12 @@
 
 .rainbowdash>*:nth-child(7n + 1){
     background-color:var(--purple);
-    color: var(--yellow);
+    color: var(--yellow)!important;
 }
 
 .rainbowdash>*:nth-child(7n + 2){
     background-color:var(--darkblue);
-    color: var(--yellow);
+    color: var(--yellow)!important;
 }
 
 .rainbowdash>*:nth-child(7n + 3){
@@ -20,11 +20,11 @@
 
 .rainbowdash>*:nth-child(7n + 4){
     background-color:var(--green);
-    color: var(--yellow);
+    color: var(--yellow)!important;
 }
 
 .rainbowdash>*:nth-child(7n + 6){
-    background-color:var(--yellow);
+    background-color:var(--yellow)!important;
     color: var(--purple)
 }
 
