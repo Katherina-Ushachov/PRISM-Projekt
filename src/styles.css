@@ -15,6 +15,9 @@
       h2{
         color: antiquewhite;
       }
+      h3{
+        color: antiquewhite;
+      }
 }
 
 @media (prefers-color-scheme: light) {
