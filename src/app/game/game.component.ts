@@ -45,51 +45,116 @@ export class GameComponent {
   red3: boolean = false;
   red4: boolean = false;
 
-  selectPurple() {
+  selectPurple1() {
     this.purple1 = !this.purple1;
+  }
+
+  selectPurple2() {
     this.purple2 = !this.purple2;
+  }
+
+  selectPurple3() {
     this.purple3 = !this.purple3;
+  }
+
+  selectPurple4() {
     this.purple4 = !this.purple4;
   }
-  selectBlue() {
+
+  selectBlue1() {
     this.blue1 = !this.blue1;
+  }
+
+  selectBlue2() {
     this.blue2 = !this.blue2;
+
+  }
+
+  selectBlue3() {
     this.blue3 = !this.blue3;
+  }
+
+  selectBlue4() {
     this.blue4 = !this.blue4;
   }
 
-  selectCerulean() {
+  selectCerulean1() {
     this.cerulean1 = !this.cerulean1;
+  }
+
+  selectCerulean2() {
     this.cerulean2 = !this.cerulean2;
+  }
+
+  selectCerulean3() {
     this.cerulean3 = !this.cerulean3;
+  }
+
+  selectCerulean4() {
     this.cerulean4 = !this.cerulean4;
   }
 
-  selectGreen() {
+  selectGreen1() {
     this.green1 = !this.green1;
+  }
+
+  selectGreen2() {
     this.green2 = !this.green2;
+  }
+
+  selectGreen3() {
     this.green3 = !this.green3;
+  }
+
+  selectGreen4() {
     this.green4 = !this.green4;
   }
 
-  selectYellow() {
+  selectYellow1() {
     this.yellow1 = !this.yellow1;
+  }
+
+  selectYellow2() {
     this.yellow2 = !this.yellow2;
+  }
+
+  selectYellow3() {
     this.yellow3 = !this.yellow3;
+  }
+
+  selectYellow4() {
     this.yellow4 = !this.yellow4;
   }
 
-  selectOrange() {
+  selectOrange1() {
     this.orange1 = !this.orange1;
+  }
+
+  selectOrange2() {
     this.orange2 = !this.orange2;
+  }
+
+  selectOrange3() {
     this.orange3 = !this.orange3;
+  }
+
+  selectOrange4() {
     this.orange4 = !this.orange4;
   }
 
-  selectRed() {
+  selectRed1() {
     this.red1 = !this.red1;
-    this.red2 = !this.red2;
+  }
+
+  selectRed2() {
+    this.red2 = !this.red2;  
+  }
+
+  selectRed3() {
     this.red3 = !this.red3;
+  }
+
+  selectRed4() {
     this.red4 = !this.red4;
   }
 }
