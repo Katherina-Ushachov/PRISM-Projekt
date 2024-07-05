@@ -17,6 +17,18 @@
         <button class="btn1" (click)="selectPurple()">Sommer</button>
         <button class="btn1" (click)="selectPurple()">Herbst</button>
         <button class="btn1" (click)="selectPurple()">Winter</button>
+        @if(purple1){ 
+            Lila
+         }
+         @if(purple2){ 
+            Violet
+         }
+         @if(purple3){ 
+            Lavendar
+         }
+         @if(purple4) {     
+            Mauve
+         }
     </div>
 
     <div>Die zweite Frage lautet: Wie fällen Sie meist wichtige Entscheidungen?
@@ -66,17 +78,3 @@
     </div>
 </div>
 
-<div><style color="white">
-    @if(purple1){ 
-    Lila
- }
- @if(purple2){ 
-    Violet
- }
- @if(purple3){ 
-    Lavendar
- }
- @if(purple4) {     
-    Mauve
- }</style>
-</div>
