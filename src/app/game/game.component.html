@@ -17,64 +17,140 @@
         <button class="btn1" (click)="selectPurple()">Sommer</button>
         <button class="btn1" (click)="selectPurple()">Herbst</button>
         <button class="btn1" (click)="selectPurple()">Winter</button>
-        @if(purple1){ 
-            Lila
-         }
-         @if(purple2){ 
-            Violet
-         }
-         @if(purple3){ 
-            Lavendar
-         }
-         @if(purple4) {     
-            Mauve
-         }
+        @if(purple1){
+        Lila
+        }
+        @if(purple2){
+        Violet
+        }
+        @if(purple3){
+        Lavendar
+        }
+        @if(purple4) {
+        Mauve
+        }
     </div>
 
     <div>Die zweite Frage lautet: Wie fällen Sie meist wichtige Entscheidungen?
         <br>
-        <button class="btn2">Mit dem Herzen</button>
-        <button class="btn2">Aus dem Bauch heraus</button>
-        <button class="btn2">Mal so mal so</button>
-        <button class="btn2">Durch intensives Nachdenken</button>
+        <button class="btn2" (click)="selectBlue()">Mit dem Herzen</button>
+        <button class="btn2" (click)="selectBlue()">Aus dem Bauch heraus</button>
+        <button class="btn2" (click)="selectBlue()">Mal so mal so</button>
+        <button class="btn2" (click)="selectBlue()">Durch intensives Nachdenken</button>
+        @if(blue1){
+        Indigo
+        }
+        @if(blue2){
+        Azul
+        }
+        @if(blue3){
+        Livia
+        }
+        @if(blue4) {
+        Sini
+        }
     </div>
 
     <div>Die dritte Frage lautet: Zu welcher Tageszeit sind Sie besonders aktiv?<br>
-        <button class="btn3">Morgens</button>
-        <button class="btn3">Mittags</button>
-        <button class="btn3">Abends</button>
-        <button class="btn3">Nachts</button>
+        <button class="btn3" (click)="selectCerulean()">Morgens</button>
+        <button class="btn3" (click)="selectCerulean()">Mittags</button>
+        <button class="btn3" (click)="selectCerulean()">Abends</button>
+        <button class="btn3" (click)="selectCerulean()">Nachts</button>
+        @if(cerulean1){
+        Cerulean
+        }
+        @if(cerulean2){
+        Aqua
+        }
+        @if(cerulean3){
+        Kaltrina
+        }
+        @if(cerulean4) {
+        Sunil
+        }
     </div>
 
     <div>Die vierte Frage lautet: Wie lösen Sie Konfliktsituationen?<br>
-        <button class="btn4">Ich versuche, die Parteien zu beeinflussen und Lösungen anzuregen.</button>
-        <button class="btn4">Ich übe Druck aus und erkläre den Konflikt für beendet.</button>
-        <button class="btn4">Ich unterstütze alle Seiten darin, sich miteinander auszusprechen.</button>
-        <button class="btn4">Ich höre allen gut zu und appeliere dann an ihr Gewissen.</button>
-
+        <button class="btn4" (click)="selectGreen">Ich versuche, die Parteien zu beeinflussen und Lösungen
+            anzuregen.</button>
+        <button class="btn4" (click)="selectGreen">Ich übe Druck aus und erkläre den Konflikt für beendet.</button>
+        <button class="btn4" (click)="selectGreen">Ich unterstütze alle Seiten darin, sich miteinander
+            auszusprechen.</button>
+        <button class="btn4" (click)="selectGreen">Ich höre allen gut zu und appeliere dann an ihr Gewissen.</button>
+        @if(green1){
+        Chloe
+        }
+        @if(green2){
+        Emerald
+        }
+        @if(green3){
+        Olive
+        }
+        @if(green4) {
+        Midori
+        }
 
     </div>
 
     <div>Die fünfte Frage lautet: Wie werden Sie meist von anderen beschrieben?<br>
-        <button class="btn5">Emotional, sensibel und/oder fröhlich.</button>
-        <button class="btn5">Spontan, draufgängerisch, und/oder wild.</button>
-        <button class="btn5">Sanftmütig, ausgeglichen und/oder flexibel.</button>
-        <button class="btn5">Besonnen, ruhig, und/oder schlau.</button>
+        <button class="btn5" (click)="selectYellow">Emotional, sensibel und/oder fröhlich.</button>
+        <button class="btn5" (click)="selectYellow">Spontan, draufgängerisch, und/oder wild.</button>
+        <button class="btn5" (click)="selectYellow">Sanftmütig, ausgeglichen und/oder flexibel.</button>
+        <button class="btn5" (click)="selectYellow">Besonnen, ruhig, und/oder schlau.</button>
+        @if(yellow1){
+        Amber
+        }
+        @if(yellow2){
+        Blain
+        }
+        @if(yellow3){
+        Flavian
+        }
+        @if(yellow4) {
+        Rozerin
+        }
+
     </div>
 
     <div>Die sechste Frage lautet: Wie beschreiben Sie sich selbst?<br>
-        <button class="btn6">Optimistisch - das Glas ist halb voll.</button>
-        <button class="btn6">Je nachdem - habe ich es gefüllt, ist es halbvoll. Habe ich daraus getrunken,
+        <button class="btn6" (click)="selectOrange">Optimistisch - das Glas ist halb voll.</button>
+        <button class="btn6" (click)="selectOrange">Je nachdem - habe ich es gefüllt, ist es halbvoll. Habe ich daraus
+            getrunken,
             halbleer.</button>
-        <button class="btn6">Mit dem Fluss gehend - das Glas ist genau so, wie es gerade gebraucht wird.</button>
-        <button class="btn6">Situationsbezogen - es IST Trinkwasser im Glas. Und das wird jetzt getrunken.</button>
+        <button class="btn6" (click)="selectOrange">Mit dem Fluss gehend - das Glas ist genau so, wie es gerade
+            gebraucht wird.</button>
+        <button class="btn6" (click)="selectOrange">Situationsbezogen - es IST Trinkwasser im Glas. Und das wird jetzt
+            getrunken.</button>
+        @if(orange1){
+        Clementine
+        }
+        @if(orange2){
+        Alani
+        }
+        @if(orange3){
+        Peach
+        }
+        @if(orange4) {
+        Gintaras
+        }
     </div>
 
     <div>Und zu guter Letzt, die siebte Frage: Welches Element spricht Sie am meisten an?<br>
-        <button class="btn7">Luft</button>
-        <button class="btn7">Feuer</button>
-        <button class="btn7">Erde</button>
-        <button class="btn7">Wasser</button>
+        <button class="btn7" (click)="selectRed">Luft</button>
+        <button class="btn7" (click)="selectRed">Feuer</button>
+        <button class="btn7" (click)="selectRed">Erde</button>
+        <button class="btn7" (click)="selectRed">Wasser</button>
+        @if(red1){
+        Ginger
+        }
+        @if(red2){
+        Ruby
+        }
+        @if(red3){
+        Scarlet
+        }
+        @if(red4) {
+        Adam
+        }
     </div>
 </div>
-
