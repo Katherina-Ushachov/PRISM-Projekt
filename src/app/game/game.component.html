@@ -13,143 +13,91 @@
 <div class="rainbowdash">
 
     <div>Die erste Frage ist einfach: Wählen Sie eine Jahreszeit aus!<br>
-        <button class="btn1" (click)="selectPurple1()">Frühling</button>
-        <button class="btn1" (click)="selectPurple2()">Sommer</button>
-        <button class="btn1" (click)="selectPurple3()">Herbst</button>
-        <button class="btn1" (click)="selectPurple4()">Winter</button>
-        @if(purple1){
-        Lila
-        }
-        @if(purple2){
-        Violet
-        }
-        @if(purple3){
-        Lavendar
-        }
-        @if(purple4) {
-        Mauve
-        }
+
+        @if(purple >= 0 && purple < purpleLabel.length){ {{purpleLabel[purple]}} } @else { <button class="btn1"
+            (click)="selectPurple(0)">Frühling</button>
+            <button class="btn1" (click)="selectPurple(1)">Sommer</button>
+            <button class="btn1" (click)="selectPurple(2)">Herbst</button>
+            <button class="btn1" (click)="selectPurple(3)">Winter</button>
+            }
     </div>
 
-    <div>Die zweite Frage lautet: Wie fällen Sie meist wichtige Entscheidungen?
-        <br>
-        <button class="btn2" (click)="selectBlue1()">Mit dem Herzen</button>
-        <button class="btn2" (click)="selectBlue2()">Aus dem Bauch heraus</button>
-        <button class="btn2" (click)="selectBlue3()">Mal so mal so</button>
-        <button class="btn2" (click)="selectBlue4()">Durch intensives Nachdenken</button>
-        @if(blue1){
-        Indigo
-        }
-        @if(blue2){
-        Azul
-        }
-        @if(blue3){
-        Livia
-        }
-        @if(blue4) {
-        Sini
-        }
+    <div>Die zweite Frage lautet: Wie fällen Sie meist wichtige Entscheidungen?<br>
+        @if(blue >=0 && blue <blueLabel.length){ {{blueLabel[blue]}} } @else{ <button class="btn2"
+            (click)="selectBlue(0)">Mit dem Herzen</button>
+            <button class="btn2" (click)="selectBlue(1)">Aus dem Bauch heraus</button>
+            <button class="btn2" (click)="selectBlue(2)">Mal so mal so</button>
+            <button class="btn2" (click)="selectBlue(3)">Durch intensives Nachdenken</button>
+            }
     </div>
 
     <div>Die dritte Frage lautet: Zu welcher Tageszeit sind Sie besonders aktiv?<br>
-        <button class="btn3" (click)="selectCerulean1()">Morgens</button>
-        <button class="btn3" (click)="selectCerulean2()">Mittags</button>
-        <button class="btn3" (click)="selectCerulean3()">Abends</button>
-        <button class="btn3" (click)="selectCerulean4()">Nachts</button>
-        @if(cerulean1){
-        Cerulean
-        }
-        @if(cerulean2){
-        Aqua
-        }
-        @if(cerulean3){
-        Kaltrina
-        }
-        @if(cerulean4) {
-        Sunil
-        }
+        @if(cerulean >=0 && cerulean <ceruleanLabel.length){ {{ceruleanLabel[cerulean]}}} @else{ <button class="btn3"
+            (click)="selectCerulean(0)">Morgens</button>
+            <button class="btn3" (click)="selectCerulean(1)">Mittags</button>
+            <button class="btn3" (click)="selectCerulean(2)">Abends</button>
+            <button class="btn3" (click)="selectCerulean(3)">Nachts</button>}
+
     </div>
 
     <div>Die vierte Frage lautet: Wie lösen Sie Konfliktsituationen?<br>
-        <button class="btn4" (click)="selectGreen1()">Ich versuche, die Parteien zu beeinflussen und Lösungen
+        @if(green >=0 && green <greenLabel.length){ {{greenLabel[green]}}} @else{ <button class="btn4"
+            (click)="selectGreen(0)">Ich versuche, die Parteien zu beeinflussen und Lösungen
             anzuregen.</button>
-        <button class="btn4" (click)="selectGreen2()">Ich übe Druck aus und erkläre den Konflikt für beendet.</button>
-        <button class="btn4" (click)="selectGreen3()">Ich unterstütze alle Seiten darin, sich miteinander
-            auszusprechen.</button>
-        <button class="btn4" (click)="selectGreen4()">Ich höre allen gut zu und appeliere dann an ihr Gewissen.</button>
-        @if(green1){
-        Chloe
-        }
-        @if(green2){
-        Emerald
-        }
-        @if(green3){
-        Olive
-        }
-        @if(green4) {
-        Midori
-        }
+            <button class="btn4" (click)="selectGreen(1)">Ich übe Druck aus und erkläre den Konflikt für
+                beendet.</button>
+            <button class="btn4" (click)="selectGreen(2)">Ich unterstütze alle Seiten darin, sich miteinander
+                auszusprechen.</button>
+            <button class="btn4" (click)="selectGreen(3)">Ich höre allen gut zu und appeliere dann an ihr
+                Gewissen.</button>
+            }
 
     </div>
 
     <div>Die fünfte Frage lautet: Wie werden Sie meist von anderen beschrieben?<br>
-        <button class="btn5" (click)="selectYellow1()">Emotional, sensibel und/oder fröhlich.</button>
-        <button class="btn5" (click)="selectYellow2()">Spontan, draufgängerisch, und/oder wild.</button>
-        <button class="btn5" (click)="selectYellow3()">Sanftmütig, ausgeglichen und/oder flexibel.</button>
-        <button class="btn5" (click)="selectYellow4()">Besonnen, ruhig, und/oder schlau.</button>
-        @if(yellow1){
-        Amber
-        }
-        @if(yellow2){
-        Blain
-        }
-        @if(yellow3){
-        Flavian
-        }
-        @if(yellow4) {
-        Rozerin
-        }
+        @if(yellow >=0 && yellow <yellowLabel.length){ {{yellowLabel[yellow]}}} @else{ <button class="btn5"
+            (click)="selectYellow(0)">Emotional, sensibel und/oder fröhlich.</button>
+            <button class="btn5" (click)="selectYellow(1)">Spontan, draufgängerisch, und/oder wild.</button>
+            <button class="btn5" (click)="selectYellow(2)">Sanftmütig, ausgeglichen und/oder flexibel.</button>
+            <button class="btn5" (click)="selectYellow(3)">Besonnen, ruhig, und/oder schlau.</button>
+            }
 
     </div>
 
     <div>Die sechste Frage lautet: Wie beschreiben Sie sich selbst?<br>
-        <button class="btn6" (click)="selectOrange1()">Optimistisch - das Glas ist halb voll.</button>
-        <button class="btn6" (click)="selectOrange2()">Je nachdem - habe ich es gefüllt, ist es halbvoll. Habe ich daraus
-            getrunken, halbleer.</button>
-        <button class="btn6" (click)="selectOrange3()">Mit dem Fluss gehend - das Glas ist genau so, wie es gerade
-            gebraucht wird.</button>
-        <button class="btn6" (click)="selectOrange4()">Situationsbezogen - es IST Trinkwasser im Glas. Und das wird jetzt
-            getrunken.</button>
-        @if(orange1){
-        Clementine
-        }
-        @if(orange2){
-        Alani
-        }
-        @if(orange3){
-        Peach
-        }
-        @if(orange4) {
-        Gintaras
-        }
+        @if(orange >=0 && orange <orangeLabel.length){ {{orangeLabel[orange]}}} @else{ <button class="btn6"
+            (click)="selectOrange(0)">Optimistisch - das Glas ist halb voll.</button>
+            <button class="btn6" (click)="selectOrange(1)">Je nachdem - habe ich es gefüllt, ist es halbvoll. Habe ich
+                daraus
+                getrunken, halbleer.</button>
+            <button class="btn6" (click)="selectOrange(2)">Mit dem Fluss gehend - das Glas ist genau so, wie es gerade
+                gebraucht wird.</button>
+            <button class="btn6" (click)="selectOrange(3)">Situationsbezogen - es IST Trinkwasser im Glas. Und das wird
+                jetzt
+                getrunken.</button>
+            }
     </div>
 
     <div>Und zu guter Letzt, die siebte Frage: Welches Element spricht Sie am meisten an?<br>
-        <button class="btn7" (click)="selectRed1()">Luft</button>
-        <button class="btn7" (click)="selectRed2()">Feuer</button>
-        <button class="btn7" (click)="selectRed3()">Erde</button>
-        <button class="btn7" (click)="selectRed4()">Wasser</button>
-        @if(red1){
-        Ginger
-        }
-        @if(red2){
-        Ruby
-        }
-        @if(red3){
-        Scarlet
-        }
-        @if(red4) {
-        Adam
-        }
+        @if(red >=0 && red <redLabel.length){ {{redLabel[red]}}} @else{ <button class="btn7" (click)="selectRed(0)">
+            Luft</button>
+            <button class="btn7" (click)="selectRed(1)">Feuer</button>
+            <button class="btn7" (click)="selectRed(2)">Erde</button>
+            <button class="btn7" (click)="selectRed(3)">Wasser</button>}
+
     </div>
+</div>
+
+<h3>Auswertung</h3>
+
+<div class="rainbowdash">
+    <p>Ihre violette Begleitung heißt {{purpleLabel[purple]}}. {{purpleLabel[purple]}} ist innerhalb der P.R.I.S.M.-Virtualität dafür zuständig
+        blablablaba.</p>
+   <p> Ihre dunkelblaue Begleitung im virtuellen Jenseits heißt {{blueLabel[blue]}}. {{blueLabel[blue]}}s Bewandtnis besteht darin, Sie ... gedöns,
+    blablablaba.</p>
+    <p>Die hellblaue Begleitung heißt {{ceruleanLabel[cerulean]}}, {{ceruleanLabel[cerulean]}}s Zuständigkeitsbereich besteht aus Zeug, Platzhaltertext, hier blablablaba. </p>
+    <p>Die grüne Begleitung trägt den Namen {{greenLabel[green]}} - grün ist die Farbe von HIER ZEUG EINFÜGEN und daher ist {{greenLabel[green]}} zuständig für Gedäh.</p>
+    <p>Gelb ist die Farbe von IrgendwasEsoterisches, und somit ist {{yellowLabel[yellow]}} ein sonniges Gemüt, das dafür zuständig ist ... Zeugs.</p>
+    <p>{{orangeLabel[orange]}} heißt die orange Begleitung im virtuellen Nachleben. Orange ist die Farbe von Dingsbums und daher ist {{orangeLabel[orange]}} verantwortlich für jadajada.</p>
+    <p>Und nicht zuletzt Rot, hier heißt Ihre Begleitung {{redLabel[red]}}. Rot ist die Farbe für Liebe, aber auch Emotionalität und Aggressivität. Daher ist {{redLabel[red]}} zuständig dafür, dass //Text//.</p>
 </div>
