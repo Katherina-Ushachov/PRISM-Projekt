@@ -147,6 +147,7 @@
         Sinnen zurechtzukommen.<br>
         In schweren, traurigeren Zeiten hilft {{redLabel[red]}}, durchzuhalten und motiviert entschlossen, etwas aus dem
         virtuellen Leben zu machen.</p>
+
 </div>
 } @placeholder {
     <p>Ihre Auswertung wird geladen ...</p>
@@ -154,4 +155,14 @@
     <p>Bitte noch einen Augenblick Geduld ...</p>
     }
 
-    <app-schlusselement></app-schlusselement>
+    <br>
+    <br>
+    <br>
+
+@defer (on viewport; on timer(1s)) {
+    <app-schlusselement></app-schlusselement>}
+    @placeholder {
+        <p>Weitere Informationen werden geladen.</p>
+    }@loading (minimum 1s){
+        <p>...</p>
+    }
