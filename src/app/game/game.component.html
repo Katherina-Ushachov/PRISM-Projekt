@@ -151,7 +151,7 @@
 </div>
 } @placeholder {
     <p>Ihre Auswertung wird geladen ...</p>
-    } @loading (minimum 5s) {
+    } @loading (minimum 1s) {
     <p>Bitte noch einen Augenblick Geduld ...</p>
     }
 
@@ -159,10 +159,10 @@
     <br>
     <br>
 
-@defer (on viewport; on timer(1s)) {
+@defer (on viewport; on timer(3s)) {
     <app-schlusselement></app-schlusselement>}
     @placeholder {
         <p>Weitere Informationen werden geladen.</p>
-    }@loading (minimum 1s){
+    }@loading (minimum 5s){
         <p>...</p>
     }
