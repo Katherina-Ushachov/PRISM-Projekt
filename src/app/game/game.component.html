@@ -90,6 +90,7 @@
 
 <h3>Auswertung</h3>
 
+@defer (on viewport) {
 <div class="rainbowdash">
     <p>Ihre violette Begleitung heißt {{purpleLabel[purple]}}. {{purpleLabel[purple]}} ist innerhalb der
         P.R.I.S.M.-Virtualität dafür zuständig, Euch zu stabilisieren. Die meisten Personen sind nach dem Upload in die
@@ -147,3 +148,8 @@
         In schweren, traurigeren Zeiten hilft {{redLabel[red]}}, durchzuhalten und motiviert entschlossen, etwas aus dem
         virtuellen Leben zu machen.</p>
 </div>
+} @placeholder {
+    <p>Ihre Auswertung wird geladen ...</p>
+    } @loading (minimum 5s) {
+    <p>Bitte noch einen Augenblick Geduld ...</p>
+    }
