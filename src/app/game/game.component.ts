@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { SchlusselementComponent } from "../schlusselement/schlusselement.component";
 
 @Component({
-  selector: 'app-game',
-  standalone: true,
-  imports: [],
-  templateUrl: './game.component.html',
-  styleUrl: './game.component.css'
+    selector: 'app-game',
+    standalone: true,
+    templateUrl: './game.component.html',
+    styleUrl: './game.component.css',
+    imports: [SchlusselementComponent]
 })
 export class GameComponent {
   purple: number = -1;
