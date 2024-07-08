@@ -18,6 +18,9 @@
       h3{
         color: antiquewhite;
       }
+      section{
+        color: antiquewhite;
+      }
 }
 
 @media (prefers-color-scheme: light) {

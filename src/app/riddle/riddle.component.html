@@ -1,53 +1,57 @@
 <p>Sie müssen sich als würdig erweisen, um Zugriff auf weitere Inhalte von P.R.I.S.M. zu erhalten.</p>
+<p>Ein Wort führt zum Ziel, das sich aus allem speist, was Sie auf dieser Webseite vorfinden.</p>
 
 @defer (on interaction; on timer(5s)){
-    <button class="btn" (click)="value = !value">Start</button>
-   
-    @if(value){
-      <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
-        <label for="solution">Ihre Lösung:</label>
-        <input id="solution" type="text" formControlName="solution"/>
+<button class="btn" (click)="value = !value">Start</button>
 
-        <div *ngIf="profileForm.dirty"
-        class="alert alert-danger">
-      <div *ngIf="profileForm.hasError('required')">
-       Es ist nicht möglich, weiterzumachen, ohne eine Eingabe zu tätigen.
-      </div>
-      <div *ngIf="profileForm.hasError('minlength')">
-        Die Eingabe muss mindestens vier Zeichen lang sein.
-      </div>
-      <div *ngIf="profileForm.hasError('forbiddenName')">
-        Herzlichen Glückwunsch. Sie haben eine erlaubte Eingabe getätigt.
-      </div>
+@if(value){
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <label for="solution">Ihre Lösung:</label>
+  <input id="solution" type="text" formControlName="solution" />
+
+  <div *ngIf="profileForm.dirty" class="alert alert-danger">
+    <div *ngIf="profileForm.hasError('required')">
+      Es ist nicht möglich, weiterzumachen, ohne eine Eingabe zu tätigen.
     </div>
-        <br>
-        <button type="submit" [disabled]="!profileForm.valid">Absenden</button>
-      
-        <p>Kontrolle: {{ profileForm.value.solution }}</p>
+    <div *ngIf="profileForm.hasError('minlength')">
+      Die Eingabe muss mindestens vier Zeichen lang sein.
+    </div>
+    <div *ngIf="profileForm.hasError('forbiddenName')">
+      Herzlichen Glückwunsch. Sie haben eine erlaubte Eingabe getätigt.
+    </div>
+  </div>
+  <br>
+  <button type="submit" [disabled]="!profileForm.valid">Absenden</button>
 
-@if(profileForm.valid){
+  <p>Kontrolle: {{ profileForm.value.solution }}</p>
+
+  @if(profileForm.valid){
   @defer (on interaction; on timer(5s)){
   <app-revelation></app-revelation>
-} @placeholder {
+  } @placeholder {
   <p>Die Eingabe ist korrekt!</p>
-}@loading (minimum 4s) {
+  }@loading (minimum 4s) {
   <p>Module werden geladen ... ...</p>
+  }
+  }@else{
+  @defer(on interaction; on timer(30s)){
+  <section (mouseover)="onMouseOver()">
+    Hier finden Sie einen weiteren Hinweis.
+    {{ message }}
+  </section> }@placeholder {
+  <p>Die Lösung liegt direkt vor Ihren Augen.</p>
+  }@loading (minimum 10s) {
+  <p>Benötigen Sie einen Tipp?</p>
+  }
+  }
+
+
+</form>
 }
+
+
+} @placeholder {
+<p>Verarbeitung läuft ... Bitte warten ... Bitte warten ...</p>
+}@loading (minimum 4s) {
+<p>Fast geschafft ...</p>
 }
-
-
-      </form>
-    }
-
-
-    } @placeholder {
-        <p>Verarbeitung läuft ... Bitte warten ... Bitte warten ...</p>
-      }@loading (minimum 4s) {
-        <p>Fast geschafft ...</p>
-      }
-
-    
-
-
-
-

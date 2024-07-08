@@ -13,6 +13,11 @@ import { RevelationComponent } from '../revelation/revelation.component';
 })
 export class RiddleComponent {
 
+  message = '';
+  onMouseOver() {
+    this.message = 'Eine Eigenschaft der Links könnte Ihnen weiterhelfen. Welche?';
+  }
+
   submitted = false;
 solution: any;
 
@@ -32,11 +37,10 @@ onSubmit() {
 function forbiddenNameValidator(nameRe: RegExp): ValidatorFn {
   return (control: AbstractControl): ValidationErrors | null => {    
     const forbidden = !nameRe.test(control.value);
-    console.log('AAAAAAghh', control.value, forbidden)
+    console.log('control value', control.value, forbidden)
     return forbidden ? { forbiddenName: { value: control.value } } : null;
   };
 
-  
 }
 
 
