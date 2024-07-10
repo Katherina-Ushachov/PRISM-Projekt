@@ -7,7 +7,7 @@ import { RandomService } from '../random.service';
   standalone: true,
   templateUrl: './game.component.html',
   styleUrl: './game.component.css',
-  imports: [SchlusselementComponent, RandomService]
+  imports: [SchlusselementComponent]
 })
 
 
