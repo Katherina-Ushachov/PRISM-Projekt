@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component} from '@angular/core';
 import { SchlusselementComponent } from "../schlusselement/schlusselement.component";
 import { RandomService } from '../random.service';
 
@@ -8,14 +8,15 @@ import { RandomService } from '../random.service';
   templateUrl: './game.component.html',
   styleUrl: './game.component.css',
   imports: [SchlusselementComponent]
+
 })
 
 
-
 export class GameComponent {
+  constructor(randomService: RandomService) { }
+
 [x: string]: any;
  
-RandomService = inject(RandomService)
 
   purple: number = -1;
   purpleLabel: Array<string> = ["Lila", "Violet", "Lavendar", "Mauve"]

@@ -14,5 +14,4 @@ export class RandomService {
     return resultpurple;
   }
 
-  constructor(randomService: RandomService) { }
 }

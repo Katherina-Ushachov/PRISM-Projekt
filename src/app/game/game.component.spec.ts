@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { GameComponent } from './game.component';
 import { SchlusselementComponent } from '../schlusselement/schlusselement.component';
-import { RandomService } from '../random.service';
+//import { RandomService } from '../random.service';
 
 describe('GameComponent', () => {
 
