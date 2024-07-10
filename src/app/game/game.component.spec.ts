@@ -2,8 +2,11 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { GameComponent } from './game.component';
 import { SchlusselementComponent } from '../schlusselement/schlusselement.component';
+import { RandomService } from '../random.service';
 
 describe('GameComponent', () => {
+
+
   let component: GameComponent;
   let fixture: ComponentFixture<GameComponent>;
 
@@ -21,4 +24,7 @@ describe('GameComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+
+
 });
