@@ -12,9 +12,9 @@
   --gray-700: oklch(36.98% 0.014 302.71);
   --gray-400: oklch(70.9% 0.015 304.04);
 
-  --rainbow-gradient: linear-gradient(
+  --rainbow-gradient: (
     background: rgb(221,0,255);
-    background: radial-gradient(circle, rgba(221,0,255,1) 0%, rgba(23,0,255,1) 13%, rgba(0,255,251,0.99) 29%, rgba(0,255,105,1) 45%, rgba(242,255,0,1) 64%, rgba(255,191,0,1) 83%, rgba(255,0,0,1) 100%);
+    background: linear-gradient, 90deg(circle, var(--purple) 0%, var(--darkblue) 13%, var(--lightblue) 29%, var(--green) 45%, var(--yellow) 64%, var(--orange-red) 83%, var(--red) 100%);
     );
 
   --pill-accent: var(--yellow);
