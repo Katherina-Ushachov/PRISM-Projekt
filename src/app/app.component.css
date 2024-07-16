@@ -54,7 +54,8 @@ main {
 }
 
 .content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
   justify-content: space-around;
   width: 100%;
   max-width: 900px;
@@ -143,9 +144,7 @@ main {
 
 @media screen and (max-width: 650px) {
   .content {
-    flex-direction: column;
-    width: max-content;
-  }
+grid-template-columns: 1fr;  }
 
   .divider {
     height: 5px;
